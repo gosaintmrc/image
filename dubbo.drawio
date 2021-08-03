@@ -1,1 +1,94 @@
-<mxfile host="app.diagrams.net" modified="2021-08-03T03:57:54.879Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" version="14.9.3" etag="ag-yjI1kF5rnVV6gUFBv" type="github"><diagram id="D__s35DSvPo7woWXZcVn">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-03T15:56:32.852Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="6PpfCyKnyHK7wM33r1ol" version="14.9.3" type="github">
+  <diagram id="D__s35DSvPo7woWXZcVn" name="Page-1">
+    <mxGraphModel dx="1038" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-1" value="&lt;font style=&quot;font-size: 18px&quot; face=&quot;Comic Sans MS&quot;&gt;ServiceConfig对象创建和封装&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="210" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-2" value="&lt;pre style=&quot;color: rgb(169 , 183 , 198) ; font-size: 15px&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;ServiceConfig&amp;lt;GreetingsService&amp;gt; service = &lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;new &lt;/span&gt;ServiceConfig&amp;lt;&amp;gt;()&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;;&lt;br&gt;&lt;/span&gt;service.setApplication(&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;new &lt;/span&gt;ApplicationConfig(&lt;span style=&quot;color: rgb(106 , 135 , 89)&quot;&gt;&quot;first-dubbo-provider&quot;&lt;/span&gt;))&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;;&lt;br&gt;&lt;/span&gt;service.setRegistry(&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;new &lt;/span&gt;RegistryConfig(&lt;span style=&quot;color: rgb(106 , 135 , 89)&quot;&gt;&quot;zookeeper://&quot; &lt;/span&gt;+ &lt;span style=&quot;color: rgb(152 , 118 , 170) ; font-style: italic&quot;&gt;zookeeperHost &lt;/span&gt;+ &lt;span style=&quot;color: rgb(106 , 135 , 89)&quot;&gt;&quot;:2181&quot;&lt;/span&gt;))&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;;&lt;br&gt;&lt;/span&gt;service.setInterface(GreetingsService.&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;class&lt;/span&gt;)&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;;&lt;br&gt;&lt;/span&gt;service.setRef(&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;new &lt;/span&gt;GreetingsServiceImpl())&lt;span style=&quot;color: rgb(204 , 120 , 50)&quot;&gt;;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="90" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-5" target="3k_BgfYpB6asWNTcoK_J-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-5" value="是否延迟暴露" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
+          <mxGeometry x="126.67" y="460" width="133.33" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.525;entryY=0.048;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-8" target="3k_BgfYpB6asWNTcoK_J-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="197" y="420" />
+              <mxPoint x="197" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-8" value="export()" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="133.34" y="350" width="126.66" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-10" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="181.67000000000002" y="420" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-11" value="&lt;font style=&quot;font-size: 15px&quot;&gt;默认直接暴露，延迟暴露是等Spring容器初始化完毕之后才开始暴露，&lt;br&gt;默认是创建提供者对象之后直接向注册中心暴露&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="350" y="430" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-13" target="3k_BgfYpB6asWNTcoK_J-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-13" value="doExport()" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="130.01" y="590" width="126.66" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-20" target="3k_BgfYpB6asWNTcoK_J-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-20" target="3k_BgfYpB6asWNTcoK_J-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-20" value="doExportUrls()" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="130.01" y="680" width="126.66" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-22" value="首先将接口和实现类设置到ServiceRepository,并且生成URL的List集合。URL是应用名称以及dubbo版本以及进程id还有注册中心地址以及时间戳等" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="374" y="680" width="226" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-24" value="&lt;font style=&quot;font-size: 12px&quot;&gt;registry://127.0.0.1:2181/org.apache.dubbo.registry.RegistryService?application=first-dubbo-provider&amp;amp;dubbo=2.0.2&amp;amp;pid=30876&amp;amp;&lt;br&gt;registry=zookeeper&amp;amp;release=2.7.10&amp;amp;timestamp=1627964753114&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="374" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-25" target="3k_BgfYpB6asWNTcoK_J-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-25" value="doExportUrlsFor1Protocol()" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="103.33999999999999" y="830" width="179.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-27" value="根据URL和dubbo协议调用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="123.33" y="780" width="160" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-28" target="3k_BgfYpB6asWNTcoK_J-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-28" value="&lt;font style=&quot;font-size: 17px&quot;&gt;ProxyFactory&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="133.34" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3k_BgfYpB6asWNTcoK_J-30" target="3k_BgfYpB6asWNTcoK_J-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-34" value="代理方式" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3k_BgfYpB6asWNTcoK_J-33">
+          <mxGeometry x="-0.4161" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-30" value="getInvoker(ref,)" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="103.33999999999999" y="1080" width="179.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3k_BgfYpB6asWNTcoK_J-32" value="&lt;font style=&quot;font-size: 17px&quot;&gt;Invoker&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
