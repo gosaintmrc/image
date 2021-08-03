@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-01T06:42:10.919Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="g1ET9jlpeBhAxP3XBYrO" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-03T03:58:06.732Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="Qu9ZZ8E1-xQFRGnAi_Zk" version="14.9.3" type="github">
   <diagram id="IhKfcqig_1F1Kvk2_YsY" name="Page-1">
     <mxGraphModel dx="1865" dy="526" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -81,6 +81,82 @@
         </mxCell>
         <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-70" value="&lt;p style=&quot;margin: 1.4em 0px ; font-size: 17px&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;flush 操作会分为以下几步执行：&lt;/font&gt;&lt;/p&gt;&lt;ol style=&quot;padding: 0px ; margin: 1.4em 0px ; display: table ; font-size: 17px&quot;&gt;&lt;li style=&quot;list-style: none ; display: table-row&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;1、buffer 被清空。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;list-style: none ; display: table-row&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;2、记录 commit point。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;list-style: none ; display: table-row&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;3、cache 内的 segment 被 fsync 刷新到磁盘。&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;list-style: none ; display: table-row&quot;&gt;&lt;font style=&quot;font-size: 17px&quot;&gt;4、translog 被删除。&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p class=&quot;ztext-empty-paragraph&quot; style=&quot;margin: -0.8em 0px ; font-size: 17px&quot;&gt;&lt;br style=&quot;color: rgb(18 , 18 , 18) ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="666" y="582.5" width="364" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-71" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;写数据&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="791" width="91" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-72" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="87" y="904" width="146" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-88" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeWidth=4;" edge="1" parent="1" source="q8G9Z3LtMTZ_Mgl1r_6L-73" target="q8G9Z3LtMTZ_Mgl1r_6L-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-89" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=4;" edge="1" parent="1" source="q8G9Z3LtMTZ_Mgl1r_6L-73" target="q8G9Z3LtMTZ_Mgl1r_6L-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-90" value="返回数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="q8G9Z3LtMTZ_Mgl1r_6L-89">
+          <mxGeometry x="0.221" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-73" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="269.75" y="904" width="146.25" height="119" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-94" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;" edge="1" parent="1" source="q8G9Z3LtMTZ_Mgl1r_6L-74" target="q8G9Z3LtMTZ_Mgl1r_6L-83">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="707" y="969" />
+              <mxPoint x="707" y="1097" />
+              <mxPoint x="160" y="1097" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-95" value="待数据同步replica" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="q8G9Z3LtMTZ_Mgl1r_6L-94">
+          <mxGeometry x="0.2281" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-74" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="471.38" y="906" width="137" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-76" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=4;" edge="1" parent="1" source="q8G9Z3LtMTZ_Mgl1r_6L-75" target="q8G9Z3LtMTZ_Mgl1r_6L-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-75" value="&lt;font style=&quot;font-size: 18px&quot; face=&quot;Comic Sans MS&quot;&gt;client&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fillColor=#33FFFF;" vertex="1" parent="1">
+          <mxGeometry x="282.88" y="786" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-77" value="挑选一个es节点" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="223" y="866" width="113" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-78" value="127.0.0.1:9300" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="908" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-80" value="127.0.0.3:9300" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="515" y="906" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-81" value="127.0.0.2:9300" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="313" y="908" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-82" value="&lt;font style=&quot;font-size: 15px&quot;&gt;primary shard1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="97" y="943" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-83" value="&lt;font style=&quot;font-size: 15px&quot;&gt;replica shard3&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="97" y="983" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-84" value="&lt;font style=&quot;font-size: 15px&quot;&gt;primary shard2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="281.25" y="943" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-85" value="&lt;font style=&quot;font-size: 15px&quot;&gt;replica shard1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="282" y="983" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-86" value="&lt;font style=&quot;font-size: 15px&quot;&gt;primary shard3&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#1ba1e2;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="476.13" y="939" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-87" value="&lt;font style=&quot;font-size: 15px&quot;&gt;replica shard2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#FFFF66;" vertex="1" parent="1">
+          <mxGeometry x="476.88" y="979" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8G9Z3LtMTZ_Mgl1r_6L-99" value="&lt;h3 style=&quot;margin: 10px 0px ; padding: 0px ; font-size: 16px ; line-height: 1.5 ; font-family: &amp;#34;pingfang sc&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; text-align: left ; background-color: rgb(245 , 245 , 245)&quot;&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 14pt&quot;&gt;es 读数据过程&lt;/span&gt;&lt;/h3&gt;&lt;p style=&quot;margin: 10px auto ; padding: 0px ; font-family: &amp;#34;pingfang sc&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; font-size: 13px ; text-align: left ; background-color: rgb(245 , 245 , 245)&quot;&gt;&lt;strong style=&quot;margin: 0px ; padding: 0px&quot;&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;&amp;nbsp;可以通过&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;doc id&lt;/code&gt;&amp;nbsp;来查询，会根据&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;doc id&lt;/code&gt;&amp;nbsp;进行 hash，判断出来当时把&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;doc id&lt;/code&gt;&amp;nbsp;分配到了哪个 shard 上面去，从那个 shard 去查询。&lt;/span&gt;&lt;/p&gt;&lt;ul style=&quot;margin: 0px 0px 0px 30px ; padding: 0px ; word-break: break-all ; font-family: &amp;#34;pingfang sc&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; font-size: 13px ; text-align: left ; background-color: rgb(245 , 245 , 245)&quot;&gt;&lt;li style=&quot;margin: 0px 0px 1em ; padding: 0px ; list-style: disc&quot;&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;客户端发送请求到任意一个 node，成为&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;coordinate node&lt;/code&gt;。&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 1em ; padding: 0px ; list-style: disc&quot;&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;coordinate node&lt;/code&gt;&amp;nbsp;对&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;doc id&lt;/code&gt;&amp;nbsp;进行哈希路由，将请求转发到对应的 node，此时会使用&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;round-robin&lt;/code&gt;随机轮询算法，在&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;primary shard&lt;/code&gt;&amp;nbsp;以及其所有 replica 中随机选择一个，让读请求负载均衡。&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 1em ; padding: 0px ; list-style: disc&quot;&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;接收请求的 node 返回 document 给&amp;nbsp;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;coordinate node&lt;/code&gt;。&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;margin: 0px 0px 1em ; padding: 0px ; list-style: disc&quot;&gt;&lt;span style=&quot;margin: 0px ; padding: 0px ; font-size: 18px&quot;&gt;&lt;code style=&quot;margin: 0px 3px ; padding: 0px 5px ; font-family: &amp;#34;courier new&amp;#34; , sans-serif ; font-size: 12px ; line-height: 1.8 ; display: inline-block ; overflow-x: auto ; vertical-align: middle ; border-radius: 3px ; background-color: rgb(246 , 246 , 246) ; color: rgb(232 , 62 , 140)&quot;&gt;coordinate node&lt;/code&gt;&amp;nbsp;返回 document 给客户端。&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="4" y="1180" width="1532" height="222" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
